@@ -17,6 +17,7 @@ cmake -GNinja \
         -DOPENCV_EXTRA_MODULES_PATH=/opencv_contrib/modules \
         -DWITH_CUDA=ON \
         -DCUDA_ARCH_BIN=90 \
+        -DENABLE_CUDA_FIRST_CLASS_LANGUAGE=ON \
         ${@} \
     /opencv
 ninja
